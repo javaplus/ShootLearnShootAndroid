@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shootlearnshoot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.shootlearnshoot.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.shootlearnshoot.NewReloadActivity"
+            android:label="@string/title_activity_new_reload" >
+            <intent-filter>
+                <action android:name="com.example.shootlearnshoot.NewReloadActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.shootlearnshoot.ViewRecipeActivity"
+            android:label="@string/title_activity_view_reload" >
+            <intent-filter>
+                <action android:name="com.example.shootlearnshoot.ViewRecipeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.shootlearnshoot.RecipeListActivity"
+            android:label="@string/title_activity_recipe_list" >
+             <intent-filter>
+                <action android:name="net.shootlearnshoot.RecipeListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
